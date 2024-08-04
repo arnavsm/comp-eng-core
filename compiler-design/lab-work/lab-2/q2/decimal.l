@@ -1,16 +1,26 @@
 %{
 #include <stdio.h>
 #include <string.h>
-
 int number = 0;
+int temp = 0;
 
 void add_number(int n) {
-    number += n;
+    if (temp == 0) {
+        temp = n;
+    } else {
+        temp += n;
+    }
 }
+
+void handle_hundred() {
+    if (temp == 0) temp = 1;
+    number += temp * 100;
+    temp = 0;
+}
+
 %}
 
 %%
-
 "ONE"             { add_number(1); }
 "TWO"             { add_number(2); }
 "THREE"           { add_number(3); }
@@ -38,14 +48,23 @@ void add_number(int n) {
 "SEVENTY"         { add_number(70); }
 "EIGHTY"          { add_number(80); }
 "NINETY"          { add_number(90); }
-"HUNDRED"         { number *= 100; }
-" "               { /* Ignore spaces */ }
-\n                { printf("Equivalent decimal: %d\n", number); number = 0; }
-.                 { /* Ignore any other characters */ }
+"HUNDRED"         { handle_hundred(); }
+[ \t]+            { /* Ignore spaces and tabs */ }
+\n                { 
+    number += temp;
+    printf("Equivalent decimal: %d\n", number);
+    number = 0;
+    temp = 0;
+}
+.                 { printf("Invalid input: %s\n", yytext); }
 
 %%
 
 int main() {
     yylex();
     return 0;
+}
+
+int yywrap() {
+    return 1;
 }
