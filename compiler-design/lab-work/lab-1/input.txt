@@ -1,0 +1,9 @@
+Begin_Header lib.h End_Header
+Body{
+ArithmaticOperation: result = operand_1 + operand_2;
+LogicOperation: Output = input_1 & input_2;
+}
+Results{
+Print(result);
+Print(output);
+}
