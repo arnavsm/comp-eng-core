@@ -1,0 +1,16 @@
+1. Write a program to test whether a given grammar is left recursive and eliminate left recursion 
+   if it is.
+
+2. Write a program to eliminate left factoring from a given grammar
+   if it is.
+
+3. Design a top-down (recursive descent) parser using recursive procedures for the
+   following grammar 
+   rules:
+   S -> cAd
+   A -> ab|a
+  Give a trace for deriving the input strings "cad" and "cat". Display error 
+  messages for invalid strings with the positions of the erroneous input.
+
+4. Write a program to find FIRST and FOLLOW sets of a given grammar. Check whether
+   the grammar is LL(1).
