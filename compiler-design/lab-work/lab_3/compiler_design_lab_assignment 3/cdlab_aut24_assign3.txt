@@ -1,0 +1,16 @@
+Assignment 3
+1. Design string recognizers using Flex tool for following 
+ (a) Strings of a's and b's 
+     where |n(a)-n(b)| mod 3 = 0.
+     n(a) and n(b) are number of a's and           
+     b's, respectively.
+ (b) Integer constants in C language.
+     Example: -125, 125, 125U, 123L, 0x4ABF, 0723.
+ (c) Floating point constant in C language.
+     Example: 0.25, 0.25f, 2.5E-1
+
+2. Write a C program to obtain a deterministic final automata from a given regular expression. First construct the non-deterministic finite automata. Then construct the equivalent deterministic finite automata. Finally, minimize the states of the deterministic finite automata.
+
+
+
+

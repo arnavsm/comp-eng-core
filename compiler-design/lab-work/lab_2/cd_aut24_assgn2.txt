@@ -1,0 +1,12 @@
+Assignment II
+1. Design DFA using C language and FLEX tool for the following patterns 
+
+(a) Strings of (a|b)*abb.
+
+(b) Strings of even 0's and odd 1's.
+ 
+2. An input alphabet consists of the following twenty eight symbols - ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN ,
+EIGHT, NINE, TEN, ELEVEN, TWELVE, THIRTEEN, FORTEEN , FIFTEEN, SIXTEEN ,SEVENTEEN, EIGHTEEN, NINETEEN, TWENTY,
+THIRTY, FOURTY, FIFTY, SIXTY, SEVENTY, EIGHTY, NINETY, HUNDRED. Design a DFA using LEX/FLEX that accepts as 
+input the English language representation (e.g. ONE HUNDRED THIRTY FIVE) of any symbol from 1 to 999 and 
+outputs the equivalent decimal number (135 in this case).

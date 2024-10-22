@@ -1,0 +1,16 @@
+Compiler Design Laboratory (CS 3075), Autumn 2022
+                                        Day 3, August 12 2022
+                               Assignnment 3 - From Regular expression to DFA with LEX/FLEX 
+
+1. Design a DFA using LEX/FLEX that will recognize a strings of odd @s and even 1s.
+
+2. Design a DFA using LEX/FLEX that will recognize a valid identifier. A valid identifier is a string whose
+starting symbol belongs to [A-Z],[a-z],_ while rest of the symbols belong to [A-Z],[a-z],_,[@-9].
+
+3. An input language consists of the following twenty eight strings of [A-Z] -
+
+ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, ELEVEN, TWELVE, THIRTEEN, FORTEEN , FIFTEEN, SIXTEEN ,SEVENTEEN, EIGHTEEN, NINETEEN,
+TWENTY, THIRTY, FOURTY, FIFTY, SIXTY, SEVENTY, EIGHTY, NINETY, HUNDRED.
+
+Design a DFA using LEX/FLEX that accepts as input the English language representation (e.g. ONE HUNDRED THIRTY FIVE) of any symbol from 1 to 999
+and outputs the equivalent decimal number (135 in this case).

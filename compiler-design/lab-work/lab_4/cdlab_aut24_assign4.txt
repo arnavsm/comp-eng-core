@@ -1,0 +1,20 @@
+Assignment 4
+Use FLEX to design the following
+
+1. A DFA that recognises chemical formulas 
+coposed of  the eigth elements H, C, N, O, 
+SI, S, CL, and SN. The formula is written 
+with commas separating consecutive elements 
+and an element can appear in any order, 
+in any combination. There are nine input 
+symbols: CHILONS, d where d stands for digit. 
+Sample sequqnces are of the form: H2,O O,H7 O2 
+etc. The formulas need not represent compounds
+ that actually exist.
+
+2. A lexical analyzer for MORSE CODE. 
+The inputs are dot, dash and space. 
+The outputs are tokens for all the 
+alphanumerics and punctuation marks for 
+which there are codes. 
+Refer the Morse Code table.
