@@ -1,0 +1,24 @@
+Assignment 8 - Intermediate Code Generation
+
+The description of source language operators are given as follows
+
+ Operators           Precedence  Associativity
+-----------------------------------------------
+  Parenthesis ()        Highest  Left to right
+  Unary minus (-)                Right to left
+  * / %                          Left to right
+   + -                           Left to right
+    =                  Lowest    Right to left
+Identifiers A-Z are single length strings represent variables stored in memory.
+Temporary t1,t2,...  are temporary variables in three-address intermediate code.
+
+Write a program to generate three-address code for a given algebraic expression following the 
+given information.
+
+Sample input: A – B + C / D / E
+
+Output
+t1=A–B
+t2=C/D
+t3=t2/E
+t4=t1+t3
